@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/xz/css/layout.css">
 
 		
-		<title> React入门 -  德布罗煜</title>
+		<title> React入门 -  florazhaozhao</title>
 		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
 		<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
 		<!-- lazyload -->
@@ -52,20 +52,20 @@
     >
         <i class="kirafont icon-menu"></i>
     </a>
-    <a href="/" title="德布罗煜">
+    <a href="/" title="florazhaozhao">
         <img
-			src="https://assets.kira.host/Pictures/Others/20220922230447.jpg"
-			alt="德布罗煜"
+			src="/xz/images/head.jpg"
+			alt="florazhaozhao"
 		/>
     </a>
 </div>
 		<div class="kira-body">
 			<div class="kira-sidebar" id="sidebar">
 	<div class="kira-avatar mdui-ripple">
-		<a target="_blank" rel="noopener" href="https://assets.kira.host/Pictures/Others/20220922230447.jpg" title="德布罗煜">
+		<a target="_blank" rel="noopener" href="/xz/images/head.jpg" title="florazhaozhao">
 			<img
-				src="https://assets.kira.host/Pictures/Others/20220922230447.jpg"
-				alt="德布罗煜"
+				src="/xz/images/head.jpg"
+				alt="florazhaozhao"
 			/>
 		</a>
 	</div>
@@ -391,13 +391,13 @@
 <h2><span id="为什么使用-jsx">为什么使用 JSX</span></h2><p>React 认为渲染逻辑本质上与其他 UI 逻辑内在耦合，比如，在 UI 中需要绑定处理事件、在某些时刻状态发生变化时需要通知到 UI，以及需要在 UI 中展示准备好的数据。<br>因此，React 没有采用<strong>标记与逻辑进行分离至不同文件</strong>的做法，而是将二者结合放进所谓的“<strong>组件</strong>”的松散耦合单元中。</p>
 <h2><span id="jsx-嵌入表达式">JSX 嵌入表达式</span></h2><p>在之前的例子中，我们在 JSX 中写了一个<code>map</code>函数循环生成<code>&lt;div&gt;</code>元素，在这段 JS 代码外部，我们用大括号将其包裹了起来，我们的表达式就写在这样的大括号内部。<br>像上面写的函数表达式也能放进去、已定义好的变量、三元表达式等也能放进去，理论上你能在里面放置一切有效的表达式，并将表达式的结果嵌入至 DOM 中。</p>
 <h2><span id="jsx-也是一个表达式">JSX 也是一个表达式</span></h2><p>JSX 也是一个表达式，这意味着，像下面这样的写法也是被允许的：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">User</span>(<span class="hljs-params">name</span>) &#123;<br>    <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>你好，我的名字是&#123;name&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;<br>&#125;<br><br><span class="hljs-title class_">ReactDOM</span>.<span class="hljs-title function_">render</span>(<br>    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><br><span class="language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>初次见面<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span><br><span class="language-xml">        &#123;User(&#x27;德布罗煜&#x27;)&#125;</span><br><span class="language-xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>,<br>    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br></code></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">User</span>(<span class="hljs-params">name</span>) &#123;<br>    <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>你好，我的名字是&#123;name&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;<br>&#125;<br><br><span class="hljs-title class_">ReactDOM</span>.<span class="hljs-title function_">render</span>(<br>    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><br><span class="language-xml">        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>初次见面<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span><br><span class="language-xml">        &#123;User(&#x27;florazhaozhao&#x27;)&#125;</span><br><span class="language-xml">    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>,<br>    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;root&#x27;</span>)<br>);<br></code></pre></td></tr></table></figure>
 
 <p>它将被渲染成：</p>
 <div style="width: 100%; background-color: #eaeaea; padding: 1rem; font-size: 1rem;">
     <div>
         <h1><span id="初次见面">初次见面</span></h1>
-        <h1><span id="你好我的名字是德布罗煜">你好，我的名字是德布罗煜</span></h1>
+        <h1><span id="你好我的名字是florazhaozhao">你好，我的名字是florazhaozhao</span></h1>
     </div>
 </div>
 
@@ -446,7 +446,7 @@
 
 	 
     <div class="kira-post-copyright">
-        <strong>本文作者：</strong>德布罗煜<br>
+        <strong>本文作者：</strong>florazhaozhao<br>
         <strong>本文链接：</strong><a href="https://kira.host/React/React%E5%85%A5%E9%97%A8/" title="https:&#x2F;&#x2F;kira.host&#x2F;React&#x2F;React入门&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;kira.host&#x2F;React&#x2F;React入门&#x2F;</a><br>
         
             <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
